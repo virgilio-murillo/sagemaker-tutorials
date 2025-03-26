@@ -23,7 +23,7 @@ if __name__ == "__main__":
     parser.add_argument("--test-file", type=str, default="test-V-1.csv")
 
     args, _ = parser.parse_known_args()
-    
+
     print("SKLearn Version: ", sklearn.__version__)
     # Removed Joblib version print since joblib is no longer used
 
@@ -31,10 +31,10 @@ if __name__ == "__main__":
     print()
     train_df = pd.read_csv(os.path.join(args.train, args.train_file))
     test_df = pd.read_csv(os.path.join(args.test, args.test_file))
-    
+
     features = list(train_df.columns)
     label = features.pop(-1)
-    
+
     print("Building training and testing datasets")
     print()
     X_train = train_df[features]
@@ -45,10 +45,10 @@ if __name__ == "__main__":
     print('Column order: ')
     print(features)
     print()
-    
+
     print("Label column is: ", label)
     print()
-    
+
     print("Data Shape: ")
     print()
     print("---- SHAPE OF TRAINING DATA (85%) ----")
@@ -59,13 +59,13 @@ if __name__ == "__main__":
     print(X_test.shape)
     print(y_test.shape)
     print()
-    
+
     print("Training RandomForest Model.....")
     print()
     model = RandomForestClassifier(n_estimators=args.n_estimators, random_state=args.random_state, verbose=3, n_jobs=-1)
     model.fit(X_train, y_train)
     print()
-    
+
     # Change file name to model.pkl and use pickle to save
     model_path = os.path.join(args.model_dir, "model.pkl")
     with open(model_path, 'wb') as f:
