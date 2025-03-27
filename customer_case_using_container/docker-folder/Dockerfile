@@ -19,8 +19,5 @@ RUN pip install --no-cache-dir --upgrade -r requirements.txt
 # Copy the source code of the application
 COPY ./src /opt/program
 
-# Copy the model into the image for local testing
-COPY ./model /opt/ml/model
-
 # Set the entry point to run Gunicorn
 ENTRYPOINT ["gunicorn", "-b", ":8080", "predictor_script:app"]
