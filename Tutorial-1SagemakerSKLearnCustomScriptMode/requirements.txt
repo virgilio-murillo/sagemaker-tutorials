@@ -1,7 +1,0 @@
-argparse
-numpy
-pandas
-scikit-learn==1.2.2
-xgboost==2.1.3
-sagemaker
-sagemaker-containers
