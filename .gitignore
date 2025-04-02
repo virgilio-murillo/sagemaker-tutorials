@@ -18,3 +18,7 @@ sample_case_Model_API/docker-folder/src/.ipynb_checkpoints
 sample_case_Model_API/docker-folder/src/__pycache__
 customer_PII/
 customer_PII/*
+custom_container_Model_inference/.ipynb_checkpoints
+custom_container_Model_inference/docker-folder/.ipynb_checkpoints
+custom_container_Model_inference/docker-folder/src/.ipynb_checkpoints
+custom_container_Model_inference/docker-folder/src/__pycache__/prediction_script.cpython-313.pyc
