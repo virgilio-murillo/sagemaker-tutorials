@@ -16,9 +16,5 @@ sample_case_Model_API/__pycache__
 sample_case_Model_API/docker-folder/.ipynb_checkpoints
 sample_case_Model_API/docker-folder/src/.ipynb_checkpoints
 sample_case_Model_API/docker-folder/src/__pycache__
-customer_case_sklearn_API/
-customer_case_sklearn_API/*
-customer_case_using_container/
-customer_case_using_container/*
-customer_case_using_container_parameters/
-customer_case_using_container_parameters/*
+customer_PII/
+customer_PII/*
