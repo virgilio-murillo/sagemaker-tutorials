@@ -1,0 +1,2 @@
+FROM public.ecr.aws/sagemaker/sagemaker-distribution:latest-cpu
+ENV SAGEMAKER_INFERENCE_CODE="predict.handler"
